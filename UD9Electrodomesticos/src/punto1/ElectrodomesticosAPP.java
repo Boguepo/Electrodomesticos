@@ -17,7 +17,7 @@ public class ElectrodomesticosAPP {
 			(300+200+500) para electrodomésticos, 200 para lavadora y 500 para televisión.
 		*/
 		
-		Electrodomestico electrodomestico[]=new Electrodomestico[2];
+		Electrodomestico electrodomestico[]=new Electrodomestico[10];
 		
 		
 		//Ciclo para crear el array con objetos
@@ -62,11 +62,11 @@ public class ElectrodomesticosAPP {
 				sumaPrecio_Elec+=electrodomestico.precioFinal();
 			}
 			
-			if(e[j] instanceof Television) {
+			if(e[j] instanceof Lavadora) {
 				sumaPrecio_Lavadora+=lavadora.precioFinal();
 			}
 			
-			if(e[j] instanceof Lavadora) {
+			if(e[j] instanceof Television) {
 				sumaPrecio_Tele+=television.precioFinal();
 			}
 		}
